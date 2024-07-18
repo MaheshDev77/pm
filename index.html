@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label[class]{
+            display: inline-block;
+            color: whitesmoke;
+        
+            
+        }
+        form{
+            border: 2px solid black;
+            background-image: url(./360_F_386827376_uWOOhKGk6A4UVL5imUBt20Bh8cmODqzx.jpg);
+            color: whitesmoke;
+        }
+
+        /* .name{
+            color: red;
+        } */
+        input[class]{
+            border: 3px solid black;
+            color: whitesmoke;
+            background-color: whitesmoke;
+        }
+        [for="email"]{
+            color: whitesmoke;
+        }
+        [name="email"]{
+            border: 3px solid white; 
+            background-color: orangered;
+        }
+        [for~="password"]{
+            color: white;
+        }
+        [name~="password"]{
+            border: 3px solid whitesmoke;
+            background-color: yellowgreen;
+        }
+        [for|="pass"]{
+            color: whitesmoke;
+        }
+        [name|="pass"]{
+            border: 3px solid white;
+            background-color: aquamarine;
+        } 
+        [for^="phone"]{
+            color: white;
+        }   
+        [name^="phone"]{
+            border: 3px solid whitesmoke;
+            color: lightblue;
+            background-color: blueviolet;
+        }
+        [for$="Address"]{
+            color: whitesmoke;
+        }
+        [name$="Address"]{
+            border: 3px solid pink;
+            color: lightgreen;
+            background-color: yellow;
+        }
+        [for*="alternate"]{
+            color: whitesmoke;
+        }
+        [name*="alternate"]{
+            border: 3px solid brown;
+            color: lightcoral;
+            background-color: azure;
+        }
+        .h1{
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1> PERSONAL INFORMATION </h1>
+      
+        <label class="name" for="name">Name:</label>
+        <input  class="name1" type="text" name="name" id="name" placeholder="name" required>
+        <br>
+        <br>
+        <a><label for="email">Email:</label></a>
+        <input type="email" name="email" id="email" placeholder="abc@gmail.com">
+        <br>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="password" required>
+        <br>
+        <br>
+        <label for="pass">Confirm Password:</label>
+        <input type="pass" name="pass" id="pass" placeholder="password" required>
+        <br>
+        <br>
+        <label for="phone-red">Mobile Number:</label>
+        <input type="tel" name="phone-new" id="phone" placeholder="phone number">
+        <br>
+        <br>
+        <label for="Address">Present Address</label>
+        <textarea id="Address" name="Address" rows="2"></textarea>
+        <br>
+        <br>
+        <label for="alternate">Alternate Mobile Number:</label>
+        <input type="tel" name="alternate" id="alternate" placeholder="phone number">
+        <br>
+        <br>
+        <input type="submit">
+    </form>
+
+</body>
+</html>
